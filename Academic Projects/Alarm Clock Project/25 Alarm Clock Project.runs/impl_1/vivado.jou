@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Nov  1 19:54:07 2024
+# Process ID: 18576
+# Current directory: C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.runs/impl_1
+# Command line: vivado.exe -log AlarmClock.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AlarmClock.tcl -notrace
+# Log file: C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.runs/impl_1/AlarmClock.vdi
+# Journal file: C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AlarmClock.tcl -notrace

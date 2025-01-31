@@ -1,0 +1,98 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Nov  1 19:54:41 2024
+| Host         : GWTN141-10 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AlarmClock_control_sets_placed.rpt
+| Design       : AlarmClock
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    80 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     5 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |           15 |
+| No           | No                    | Yes                    |              11 |            2 |
+| No           | Yes                   | No                     |             184 |           55 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              15 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+--------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|                Clock Signal               |          Enable Signal         |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------+--------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|  Hz1clk/CLK                               |                                |                                               |                1 |              1 |         1.00 |
+|  Select/FSM_sequential_state_reg_reg[0]_0 |                                |                                               |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                         |                                |                                               |                1 |              2 |         2.00 |
+|  Hz400clk/CLK                             |                                |                                               |                2 |              3 |         1.50 |
+|  Hz05clk/outsig05                         |                                |                                               |                2 |              4 |         2.00 |
+|  Hz1clk/CLK                               | mycontrol/counter[4]_i_2_n_0   | Alarmstop/SS[0]                               |                2 |              5 |         2.50 |
+|  sysclkwire_BUFG                          |                                |                                               |                5 |              5 |         1.00 |
+|  Hz100clk/outsig100                       |                                |                                               |                3 |              6 |         2.00 |
+|  Hz1clk/CLK                               |                                | Clkreset/FSM_sequential_state_reg_reg[0]_0[0] |                3 |              6 |         2.00 |
+|  Hz1clk/CLK                               |                                | Clkreset/SR[0]                                |                2 |              6 |         3.00 |
+|  sysclk_IBUF_BUFG                         |                                | nolabel_line38/minute[5]_i_1__0_n_0           |                4 |              6 |         1.50 |
+|  sysclk_IBUF_BUFG                         |                                | nolabel_line38/second[5]_i_1__0_n_0           |                5 |              6 |         1.20 |
+|  sysclkwire_BUFG                          | alarm_song/time10_carry__2_n_0 | mycontrol/AR[0]                               |                4 |             10 |         2.50 |
+|  Hz1clk/CLK                               |                                | mycontrol/AR[0]                               |                2 |             11 |         5.50 |
+|  sysclkwire_BUFG                          |                                | alarm_song/counter[0]_i_1_n_0                 |                5 |             20 |         4.00 |
+|  sysclkwire_BUFG                          |                                | Hz100clk/counter[0]_i_1__3_n_0                |                7 |             27 |         3.86 |
+|  sysclkwire_BUFG                          |                                | Hz1clk/counter[0]_i_1__0_n_0                  |                7 |             27 |         3.86 |
+|  sysclkwire_BUFG                          |                                | Hz400clk/counter[0]_i_1__1_n_0                |                7 |             27 |         3.86 |
+|  sysclkwire_BUFG                          |                                | Hz05clk/counter[0]_i_1__2_n_0                 |                7 |             27 |         3.86 |
+|  sysclkwire_BUFG                          |                                | alarm_song/number_reg_rep_i_1_n_0             |                8 |             32 |         4.00 |
++-------------------------------------------+--------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+
+

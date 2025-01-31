@@ -1,0 +1,188 @@
+
+*** Running vivado
+    with args -log snake_top_an.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source snake_top_an.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source snake_top_an.tcl -notrace
+Command: synth_design -top snake_top_an -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13468
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1115.047 ; gain = 4.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'snake_top_an' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_06_pong_top_an.v:2]
+INFO: [Synth 8-6157] synthesizing module 'SongPlayerBGM' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/SongPlayer.v:3]
+	Parameter clockFrequency bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MusicSheetBGM' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/SongPlayer.v:44]
+	Parameter EIGHTH bound to: 5'b00001 
+	Parameter QUARTER bound to: 5'b00010 
+	Parameter HALF bound to: 5'b00100 
+	Parameter ONE bound to: 8 - type: integer 
+	Parameter TWO bound to: 16 - type: integer 
+	Parameter FOUR bound to: 32 - type: integer 
+	Parameter SP bound to: 1 - type: integer 
+	Parameter E3 bound to: 151686 - type: integer 
+	Parameter D3 bound to: 170262 - type: integer 
+	Parameter B3 bound to: 202477 - type: integer 
+	Parameter G3 bound to: 127553 - type: integer 
+	Parameter FS3 bound to: 135137 - type: integer 
+	Parameter A3 bound to: 227273 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MusicSheetBGM' (1#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/SongPlayer.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'SongPlayerBGM' (2#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/SongPlayer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SongPlayerBeep' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/BeepSound.v:3]
+	Parameter clockFrequency bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MusicSheetBeep' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/BeepSound.v:45]
+	Parameter EIGHTH bound to: 5'b00001 
+	Parameter QUARTER bound to: 5'b00010 
+	Parameter HALF bound to: 5'b00100 
+	Parameter ONE bound to: 8 - type: integer 
+	Parameter TWO bound to: 16 - type: integer 
+	Parameter FOUR bound to: 32 - type: integer 
+	Parameter SP bound to: 1 - type: integer 
+	Parameter A5 bound to: 56818 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MusicSheetBeep' (3#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/BeepSound.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'SongPlayerBeep' (4#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/BeepSound.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LoseSongPlayer' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/LoseSoundPlayer.v:3]
+	Parameter clockFrequency bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MusicSheetLose' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/LoseSoundPlayer.v:45]
+	Parameter EIGHTH bound to: 5'b00001 
+	Parameter QUARTER bound to: 5'b00010 
+	Parameter HALF bound to: 5'b00100 
+	Parameter ONE bound to: 8 - type: integer 
+	Parameter TWO bound to: 16 - type: integer 
+	Parameter FOUR bound to: 32 - type: integer 
+	Parameter SP bound to: 1 - type: integer 
+	Parameter C2 bound to: 382226 - type: integer 
+	Parameter CS2 bound to: 360773 - type: integer 
+	Parameter D2 bound to: 340524 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MusicSheetLose' (5#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/LoseSoundPlayer.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'LoseSongPlayer' (6#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/LoseSoundPlayer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'WinSongPlayer' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/WinSoundPlayer.v:3]
+	Parameter clockFrequency bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MusicSheetWin' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/WinSoundPlayer.v:45]
+	Parameter EIGHTH bound to: 5'b00001 
+	Parameter QUARTER bound to: 5'b00010 
+	Parameter HALF bound to: 5'b00100 
+	Parameter ONE bound to: 8 - type: integer 
+	Parameter TWO bound to: 16 - type: integer 
+	Parameter FOUR bound to: 32 - type: integer 
+	Parameter SP bound to: 1 - type: integer 
+	Parameter E5 bound to: 37922 - type: integer 
+	Parameter CS5 bound to: 45097 - type: integer 
+	Parameter D5 bound to: 42566 - type: integer 
+	Parameter G5 bound to: 31888 - type: integer 
+	Parameter F5 bound to: 35793 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000001110 is unreachable [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/WinSoundPlayer.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'MusicSheetWin' (7#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/WinSoundPlayer.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'WinSongPlayer' (8#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/WinSoundPlayer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_50m_generator' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/clk_50m_generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clk_50m_generator' (9#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/clk_50m_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/vga_sync.v:3]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 29 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (10#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/vga_sync.v:3]
+INFO: [Synth 8-6157] synthesizing module 'snake_graph_animate' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:2]
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter WALLT_X_L bound to: 115 - type: integer 
+	Parameter WALLT_X_R bound to: 525 - type: integer 
+	Parameter WALLT_Y_T bound to: 35 - type: integer 
+	Parameter WALLT_Y_B bound to: 40 - type: integer 
+	Parameter WALLB_X_L bound to: 115 - type: integer 
+	Parameter WALLB_X_R bound to: 525 - type: integer 
+	Parameter WALLB_Y_T bound to: 440 - type: integer 
+	Parameter WALLB_Y_B bound to: 445 - type: integer 
+	Parameter WALLL_X_L bound to: 115 - type: integer 
+	Parameter WALLL_X_R bound to: 120 - type: integer 
+	Parameter WALLL_Y_T bound to: 35 - type: integer 
+	Parameter WALLL_Y_B bound to: 440 - type: integer 
+	Parameter WALLR_X_L bound to: 520 - type: integer 
+	Parameter WALLR_X_R bound to: 525 - type: integer 
+	Parameter WALLR_Y_T bound to: 35 - type: integer 
+	Parameter WALLR_Y_B bound to: 440 - type: integer 
+	Parameter PLAY_AREA_X_L bound to: 120 - type: integer 
+	Parameter PLAY_AREA_X_R bound to: 520 - type: integer 
+	Parameter PLAY_AREA_Y_T bound to: 40 - type: integer 
+	Parameter PLAY_AREA_Y_B bound to: 440 - type: integer 
+	Parameter SNAKE_P_SIZE bound to: 10 - type: integer 
+	Parameter SNAKE_MAX_SIZE bound to: 1000 - type: integer 
+	Parameter SNAKE_V_P bound to: 10 - type: integer 
+	Parameter SNAKE_V_N bound to: -10 - type: integer 
+	Parameter BALL_SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'snakeClkGen' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/Snake_Update.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'snakeClkGen' (11#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/Snake_Update.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SecPulse' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/OneSecPulse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SecPulse' (12#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/OneSecPulse.v:3]
+WARNING: [Synth 8-7071] port 'counter' of module 'SecPulse' is unconnected for instance 'one_sec_clk' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:128]
+WARNING: [Synth 8-7023] instance 'one_sec_clk' of module 'SecPulse' has 6 connections declared, but only 5 given [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:128]
+WARNING: [Synth 8-7071] port 'counter' of module 'SecPulse' is unconnected for instance 'ten_sec_clk' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:129]
+WARNING: [Synth 8-7023] instance 'ten_sec_clk' of module 'SecPulse' has 6 connections declared, but only 5 given [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:129]
+INFO: [Synth 8-6157] synthesizing module 'RandomGen' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/RandomGen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RandomGen' (13#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/RandomGen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pong_text' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game/list_ch14_06_pong_text.v:2]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/font_rom.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (14#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/new/font_rom.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'pong_text' (15#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game/list_ch14_06_pong_text.v:2]
+WARNING: [Synth 8-689] width (4) of port connection 'text_on' does not match port width (3) of module 'pong_text' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:145]
+INFO: [Synth 8-6157] synthesizing module 'pong_text2' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game/list_ch14_06_pong_text2.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game/list_ch14_06_pong_text2.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game/list_ch14_06_pong_text2.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'pong_text2' (16#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game/list_ch14_06_pong_text2.v:2]
+WARNING: [Synth 8-689] width (4) of port connection 'text_on' does not match port width (3) of module 'pong_text2' [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:151]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:168]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:180]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'snake_graph_animate' (17#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_05_ pong_graph_animate.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'snake_top_an' (18#1) [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/sources_1/imports/35 Final Project Snake Game/list_ch13_06_pong_top_an.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:52 . Memory (MB): peak = 2082.785 ; gain = 972.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:01:00 . Memory (MB): peak = 2082.785 ; gain = 972.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:00 . Memory (MB): peak = 2082.785 ; gain = 972.520
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2082.785 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/constrs_1/imports/31 VGA Ball Game/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/constrs_1/imports/31 VGA Ball Game/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kaung/Documents/Vivado Code/Final Project Snake Game Done/Final Project Snake Game Done.srcs/constrs_1/imports/31 VGA Ball Game/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/snake_top_an_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/snake_top_an_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2177.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.360 . Memory (MB): peak = 2177.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 2177.766 ; gain = 1067.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1

@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Nov  1 19:53:07 2024
+# Process ID: 13840
+# Current directory: C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.runs/synth_1
+# Command line: vivado.exe -log AlarmClock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AlarmClock.tcl
+# Log file: C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.runs/synth_1/AlarmClock.vds
+# Journal file: C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AlarmClock.tcl -notrace
+Command: synth_design -top AlarmClock -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4480
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1115.125 ; gain = 6.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AlarmClock' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:3]
+	Parameter freq05 bound to: 0.500000 - type: double 
+	Parameter freq1 bound to: 1 - type: integer 
+	Parameter freq100 bound to: 100 - type: integer 
+	Parameter freq400 bound to: 400 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'slowerClkGen' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:373]
+INFO: [Synth 8-6155] done synthesizing module 'slowerClkGen' (1#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:373]
+INFO: [Synth 8-6157] synthesizing module 'upcounter' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:397]
+INFO: [Synth 8-6155] done synthesizing module 'upcounter' (2#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:397]
+INFO: [Synth 8-6157] synthesizing module 'Redge_detect' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:338]
+	Parameter zero bound to: 2'b00 
+	Parameter edg bound to: 2'b01 
+	Parameter one bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'Redge_detect' (3#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:338]
+INFO: [Synth 8-6157] synthesizing module 'TimeGen' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'TimeGen' (4#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:137]
+INFO: [Synth 8-6157] synthesizing module 'DigitSeparator' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:231]
+INFO: [Synth 8-6155] done synthesizing module 'DigitSeparator' (5#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:231]
+INFO: [Synth 8-6157] synthesizing module 'Pattern' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:305]
+INFO: [Synth 8-6155] done synthesizing module 'Pattern' (6#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:305]
+INFO: [Synth 8-6157] synthesizing module 'Toggle_In' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:325]
+INFO: [Synth 8-6155] done synthesizing module 'Toggle_In' (7#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:325]
+INFO: [Synth 8-6157] synthesizing module 'TimeSelect' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'TimeSelect' (8#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:164]
+INFO: [Synth 8-6157] synthesizing module 'Alarm_Control' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'Alarm_Control' (9#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:98]
+INFO: [Synth 8-6157] synthesizing module 'SongPlayer' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:437]
+	Parameter clockFrequency bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MusicSheet' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:480]
+	Parameter EIGHTH bound to: 5'b00001 
+	Parameter QUARTER bound to: 5'b00010 
+	Parameter HALF bound to: 5'b00100 
+	Parameter ONE bound to: 8 - type: integer 
+	Parameter TWO bound to: 16 - type: integer 
+	Parameter FOUR bound to: 32 - type: integer 
+	Parameter SP bound to: 1 - type: integer 
+	Parameter G3 bound to: 127553 - type: integer 
+	Parameter A4 bound to: 113636 - type: integer 
+	Parameter C4 bound to: 95556 - type: integer 
+	Parameter D4 bound to: 85131 - type: integer 
+	Parameter E4 bound to: 75843 - type: integer 
+	Parameter F4 bound to: 71586 - type: integer 
+	Parameter G4 bound to: 63776 - type: integer 
+	Parameter E3 bound to: 151686 - type: integer 
+	Parameter D3 bound to: 170262 - type: integer 
+	Parameter B4 bound to: 101238 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MusicSheet' (10#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:480]
+INFO: [Synth 8-6155] done synthesizing module 'SongPlayer' (11#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:437]
+INFO: [Synth 8-6157] synthesizing module 'RGB_led' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_led' (12#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:407]
+INFO: [Synth 8-6157] synthesizing module 'mux8to1' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:243]
+WARNING: [Synth 8-567] referenced signal 'C0' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:250]
+WARNING: [Synth 8-567] referenced signal 'C1' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:250]
+WARNING: [Synth 8-567] referenced signal 'C2' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:250]
+WARNING: [Synth 8-567] referenced signal 'C3' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:250]
+WARNING: [Synth 8-567] referenced signal 'C4' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:250]
+WARNING: [Synth 8-567] referenced signal 'C5' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:250]
+WARNING: [Synth 8-567] referenced signal 'C6' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:250]
+WARNING: [Synth 8-567] referenced signal 'C7' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:250]
+INFO: [Synth 8-6155] done synthesizing module 'mux8to1' (13#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:243]
+INFO: [Synth 8-6157] synthesizing module 'On_Off_logic' [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:57]
+WARNING: [Synth 8-567] referenced signal 'sysclk' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:69]
+WARNING: [Synth 8-567] referenced signal 'Cwire' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:69]
+WARNING: [Synth 8-567] referenced signal 'ANwire' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:69]
+WARNING: [Synth 8-567] referenced signal 'DPwire' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:69]
+WARNING: [Synth 8-567] referenced signal 'audioOutwire' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:69]
+WARNING: [Synth 8-567] referenced signal 'aud_sdwire' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:69]
+WARNING: [Synth 8-567] referenced signal 'RGB1wire' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:69]
+WARNING: [Synth 8-567] referenced signal 'RGB2wire' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:69]
+WARNING: [Synth 8-567] referenced signal 'set_al' should be on the sensitivity list [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'On_Off_logic' (14#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'AlarmClock' (15#1) [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.srcs/sources_1/new/AlarmClock.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1170.754 ; gain = 61.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1170.754 ; gain = 61.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1170.754 ; gain = 61.836
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1170.754 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AlarmClock_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AlarmClock_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1279.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1279.703 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1279.703 ; gain = 170.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1279.703 ; gain = 170.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1279.703 ; gain = 170.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'Redge_detect'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                               00 |                               00
+                     edg |                               01 |                               01
+                     one |                               10 |                               10
+                  iSTATE |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'Redge_detect'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1279.703 ; gain = 170.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 9     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   18 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 16    
+	   2 Input    5 Bit        Muxes := 3     
+	 100 Input    5 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   7 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 10    
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP alarm_song/time11, operation Mode is: (A:0xbebc20)*B.
+DSP Report: operator alarm_song/time11 is absorbed into DSP alarm_song/time11.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1279.703 ; gain = 170.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+---------------------------+---------------+----------------+
+|Module Name | RTL Object                | Depth x Width | Implemented As | 
++------------+---------------------------+---------------+----------------+
+|MusicSheet  | note                      | 128x18        | LUT            | 
+|AlarmClock  | alarm_song/number_reg_rep | 128x18        | Block RAM      | 
++------------+---------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SongPlayer  | (A:0xbebc20)*B | 24     | 5      | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1323.812 ; gain = 214.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1324.258 ; gain = 215.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance alarm_song/number_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1344.113 ; gain = 235.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1358.871 ; gain = 249.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1358.871 ; gain = 249.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1358.871 ; gain = 249.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1358.871 ; gain = 249.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1358.910 ; gain = 249.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1358.910 ; gain = 249.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    76|
+|3     |DSP48E1  |     1|
+|4     |LUT1     |    12|
+|5     |LUT2     |    47|
+|6     |LUT3     |    37|
+|7     |LUT4     |    78|
+|8     |LUT5     |    88|
+|9     |LUT6     |   120|
+|10    |MUXF7    |     3|
+|11    |MUXF8    |     1|
+|12    |RAMB18E1 |     1|
+|13    |FDCE     |    11|
+|14    |FDRE     |   206|
+|15    |FDSE     |    15|
+|16    |IBUF     |     8|
+|17    |OBUF     |    25|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1358.910 ; gain = 249.992
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.910 ; gain = 141.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1358.910 ; gain = 249.992
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1370.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1371.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:46 . Memory (MB): peak = 1371.949 ; gain = 263.031
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kaung/Documents/Vivado Code/25 Alarm Clock Project/25 Alarm Clock Project.runs/synth_1/AlarmClock.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AlarmClock_utilization_synth.rpt -pb AlarmClock_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 19:53:59 2024...
