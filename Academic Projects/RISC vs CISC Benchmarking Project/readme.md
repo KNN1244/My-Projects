@@ -1,0 +1,1 @@
+Contains our group project which is on Computer vision running on different archetectures. We are thinking of doing the difference of a PI4 and PI5. We will make sure they have the same or as close in other like ram, memory etc.
